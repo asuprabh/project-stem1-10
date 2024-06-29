@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+thead {
+    background-color: #3c3c3c;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+th {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+tbody tr:hover {
+    background-color: #e9ecef;
+    transition: background-color 0.3s ease-in-out;
+}
+
+td:first-child, th:first-child {
+    border-left: none;
+}
+
+td:last-child, th:last-child {
+    border-right: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+button {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #6c6c6c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #5a5a5a;
+}
+
+.undoBtn {
+    margin-top: 20px;
+    background-color: #dc3545;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.undoBtn:hover {
+    background-color: #c82333;
+}
