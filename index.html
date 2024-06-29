@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mathematical Formulas</h1>
+        <table id="formulaTable">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Formula</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arithmetic</td>
+                    <td>a + b = c</td>
+                    <td>Addition</td>
+                    <td>
+                        <button class="editBtn">Edit</button>
+                        <button class="deleteBtn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Arithmetic</td>
+                    <td>a - b = c</td>
+                    <td>Subtraction</td>
+                    <td>
+                        <button class="editBtn">Edit</button>
+                        <button class="deleteBtn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Arithmetic</td>
+                    <td>a * b = c</td>
+                    <td>Multiplication</td>
+                    <td>
+                        <button class="editBtn">Edit</button>
+                        <button class="deleteBtn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Arithmetic</td>
+                    <td>a / b = c</td>
+                    <td>Division</td>
+                    <td>
+                        <button class="editBtn">Edit</button>
+                        <button class="deleteBtn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Algebraic</td>
+                    <td>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></td>
+                    <td>Pythagorean theorem</td>
+                    <td>
+                        <button class="editBtn">Edit</button>
+                        <button class="deleteBtn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Algebraic</td>
+                    <td>ax<sup>2</sup> + bx + c = 0</td>
+                    <td>Quadratic equation</td>
+                    <td>
+                        <button class="editBtn">Edit</button>
+                        <button class="deleteBtn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Algebraic</td>
+                    <td>(a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></td>
+                    <td>Square of a binomial</td>
+                    <td>
+                        <button class="editBtn">Edit</button>
+                        <button class="deleteBtn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Algebraic</td>
+                    <td>(a + b + c)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 2(ab + bc + ca)</td>
+                    <td>Square of a trinomial</td>
+                    <td>
+                        <button class="editBtn">Edit</button>
+                        <button class="deleteBtn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Algebraic</td>
+                    <td>(a - b)<sup>2</sup> = a<sup>2</sup> - 2ab + b<sup>2</sup></td>
+                    <td>Difference of squares</td>
+                    <td>
+                        <button class="editBtn">Edit</button>
+                        <button class="deleteBtn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Algebraic</td>
+                    <td>a<sup>3</sup> + b<sup>3</sup> = (a + b)(a<sup>2</sup> - ab + b<sup>2</sup>)</td>
+                    <td>Sum of cubes</td>
+                    <td>
+                        <button class="editBtn">Edit</button>
+                        <button class="deleteBtn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Algebraic</td>
+                    <td>a<sup>3</sup> - b<sup>3</sup> = (a - b)(a<sup>2</sup> + ab + b<sup>2</sup>)</td>
+                    <td>Difference of cubes</td>
+                    <td>
+                        <button class="editBtn">Edit</button>
+                        <button class="deleteBtn">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form id="addFormulaForm">
+            <h2>Add New Formula</h2>
+            <label for="type">Type:</label>
+            <input type="text" id="type" name="type" required>
+            <label for="formula">Formula:</label>
+            <input type="text" id="formula" name="formula" required>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required>
+            <button type="submit">Add Formula</button>
+        </form>
+
+        <form id="editFormulaForm" style="display:none;">
+            <h2>Edit Formula</h2>
+            <label for="editType">Type:</label>
+            <input type="text" id="editType" name="type" required>
+            <label for="editFormula">Formula:</label>
+            <input type="text" id="editFormula" name="formula" required>
+            <label for="editDescription">Description:</label>
+            <input type="text" id="editDescription" name="description" required>
+            <button type="submit">Update Formula</button>
+            <button type="button" id="cancelEdit">Cancel</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
